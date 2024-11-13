@@ -1,0 +1,44 @@
+로고 -> 크래프톤
+메뉴 -> About
+Studios
+Games
+More Experience
+Careers
+IR
+CSR
+News
+언어 바꾸기
+
+
+
+메인 -> video /이미지
+
+
+BUSINESS -> Studio 4개
+
+
+
+IR -> NEWS
+처음에 큰 사각형에 이미지
+3개 똑같이 넣어주세요(career IR CSR)
+
+
+Career
+처음에 큰 사각형은 삼성SDI 따라하고
+두개 사각형에 크래프톤 이미지 넣기
+
+ESG ->
+KRAFTON GAMES
+슬라이드
+
+
+FOOTER
+
+
+
+
+
+--> html, css, javascript(jQuery)
+
+
+
