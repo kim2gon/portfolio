@@ -13,6 +13,9 @@ News
 
 메인 -> video /이미지
 
+https://www.krafton.com/wp-content/uploads/2021/06/video-005.mp4
+
+https://www.krafton.com/wp-content/uploads/2021/06/video-007.mp4
 
 BUSINESS -> Studio 4개
 
@@ -41,4 +44,4 @@ FOOTER
 --> html, css, javascript(jQuery)
 
 
-
+responsive dropdown menu
