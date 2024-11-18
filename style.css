@@ -1,13 +1,8 @@
-/* CSS Document */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-
 body {
-	background: #fff;
-	font-size:18px;
-	line-height: 22px;
-	color: #000;
+	background: #212121;
+	font-size:22px;
+	line-height: 32px;
+	color: #ffffff;
 	margin: 0;
 	padding: 0;
 	word-wrap:break-word !important;
@@ -32,7 +27,7 @@ h3 a {
 }
 
 a {
-	color: #000;
+	color: #FFF;
 }
 
 h1 {
@@ -66,10 +61,16 @@ nav {
 
 #logo {
 	display: block;
-	padding: 0 30px;
+	/* padding: 0 30px; */
 	float: left;
+	width: 20%;
 	font-size:20px;
 	line-height: 60px;
+	background-image: url(../img/logo/logo-black.png);
+	background-repeat: no-repeat;
+	text-indent: -999px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -103,17 +104,18 @@ nav ul li {
 nav a {
 	display:block;
 	padding:14px 20px;	
-	color:#000;
+	color:#222;
 	font-size:17px;
 	text-decoration:none;
 }
 
 
-nav ul li ul li:hover { background: #000000; }
+nav ul li ul li:hover { background: #fff; }
 
 /* Background color change on Hover */
 nav a:hover { 
-	background-color: #000000; 
+	background-color: #fff;
+	color: #1E82FF;
 }
 
 /* Hide Dropdowns by Default
@@ -147,6 +149,36 @@ nav ul ul ul li {
 	top:-60px;
 	/* has to be the same number as the "width" of "nav ul ul li" */ 
 	left:170px; 
+}
+
+	
+#mainvideo {
+	/* background: no-repeat center / cover; */
+    align-items: center;
+	width: 100%;
+}
+
+.menubar{
+	display: none;
+	transition: 1s;
+	width: 100vw;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    padding: 50px 0 52px;
+    box-sizing: border-box;
+    line-height: 1;
+    transform: translate(-50%, 0);
+}
+
+.menu li:hover .menubar {
+	display: block;
+}
+
+.menubar ul {
+	justify-content: center;
+	display: flex;
+	gap: 130px;
 }
 
 
@@ -186,7 +218,7 @@ nav ul ul ul li {
 	}
 
 	.toggle:hover {
-		background-color: #000000;
+		background-color: #fff;
 	}
 
 	/* Display Dropdown when clicked on Parent Lable */
@@ -225,7 +257,7 @@ nav ul ul ul li {
   
 	nav ul li ul li .toggle,
 	nav ul ul a {
-		background-color: #222; 
+		background-color: #212121; 
 	}
 
 	/* Hide Dropdowns by Default */
