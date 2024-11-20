@@ -211,6 +211,13 @@ nav ul ul ul li {
 	display: block;
 }
 
+
+
+
+
+
+/* ---------------------Studio Start---------------------- */
+
 .StudioImgs {
 	display: flex;
     justify-content: center;
@@ -240,7 +247,6 @@ nav ul ul ul li {
 	padding-top: 30px;
 	border-top: 2px solid black;
 	color: #000;
-	
 }
 .box .titsub1B p{
 	text-align: left;
@@ -316,6 +322,40 @@ nav ul ul ul li {
 	background: rgb(10, 196, 149);
 	color: #fff;
 }
+/* ----------------Studio End---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries
 --------------------------------------------- */
