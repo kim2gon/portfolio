@@ -211,57 +211,110 @@ nav ul ul ul li {
 	display: block;
 }
 
-.StudioItem li a .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 20px;
-    color: #fff;
-    background-size: cover;
-    background-position: center;
-}
-
 .StudioImgs {
 	display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.box {
+	translate: none;
+	rotate: none;
+	scale: none;
+	opacity: 1;
+	visibility: inherit;
+	transform: translate(0px, 0px);
+}
+
+.box span {
+	translate: none;
+	rotate: none;
+	scale: none;
+	transform: translate(0px, 0px);
+}
+
 .box .titsub1B {
-	vertical-align: bottom;
+	display: block;
+	transform: translate(0,200px);
+	text-align: left;
+	padding-top: 30px;
+	border-top: 2px solid black;
+	color: #000;
+	
+}
+.box .titsub1B p{
+	text-align: left;
+}
+
+.StudioImgs li:nth-child(1):hover a .box .titsub1B{
+	color: white;
+	border-top: 2px solid white;
+}
+.StudioImgs li:nth-child(1):hover a .box{
+	background-image: url(/img/logo/logo-pubg-w.png);
+}
+.StudioImgs li:nth-child(2):hover a .box .titsub1B{
+	color: white;
+	border-top: 2px solid white;
+}
+.StudioImgs li:nth-child(2):hover a .box{
+	background-image: url(/img/logo/logo-bluehole-w.png);
+}
+.StudioImgs li:nth-child(3):hover a .box .titsub1B{
+	color: white;
+	border-top: 2px solid white;
+}
+.StudioImgs li:nth-child(3):hover a .box{
+	background-image: url(/img/logo/logo-rising-w.png);
+}
+.StudioImgs li:nth-child(4):hover a .box .titsub1B{
+	color: white;
+	border-top: 2px solid white;
+}
+.StudioImgs li:nth-child(4):hover a .box{
+	background-image: url(/img/logo/logo-striking-w.png);
+	background-size: 334px;
 }
 
 .StudioImgs li:nth-child(1) a .box{
 	height: 355px;
+	margin: 20px;
 	background-image: url(/img/logo/logo-pubg.png);
 	background-repeat: no-repeat;
 }
 .StudioImgs li:nth-child(1) :hover{
 	background: orange;
+	color: #fff;
 }
 .StudioImgs li:nth-child(2) a .box{
 	height: 355px;
+	margin: 20px;
 	background-image: url(/img/logo/logo-bluehole.png);
 	background-repeat: no-repeat;
 }
 .StudioImgs li:nth-child(2) :hover{
 	background: skyblue;
+	color: #fff;
 }
 .StudioImgs li:nth-child(3) a .box{
 	height: 355px;
+	margin: 20px;
 	background-image: url(/img/logo/logo-rising.png);
 	background-repeat: no-repeat;
 }
 .StudioImgs li:nth-child(3) :hover{
 	background: rgb(243, 70, 1);
+	color: #fff;
 }
 .StudioImgs li:nth-child(4) a .box{
 	height: 355px;
+	margin: 20px;
 	background-image: url(/img/logo/logo-striking.png);
 	background-repeat: no-repeat;
 }
 .StudioImgs li:nth-child(4) :hover{
 	background: rgb(10, 196, 149);
+	color: #fff;
 }
 
 /* Media Queries
