@@ -167,7 +167,7 @@ nav ul ul ul li {
 	
 #mainvideo {
 	/* background: no-repeat center / cover; */
-    align-items: center;
+	/* align-items: center; */
 	width: 100%;
 }
 
@@ -279,6 +279,7 @@ nav ul ul ul li {
 }
 .StudioImgs li:nth-child(4):hover a .box{
 	background-image: url(/img/logo/logo-striking-w.png);
+	background-size: 334px;
 }
 
 .StudioImgs li:nth-child(1) a .box{
@@ -286,7 +287,6 @@ nav ul ul ul li {
 	margin: 20px;
 	background-image: url(/img/logo/logo-pubg.png);
 	background-repeat: no-repeat;
-    transition-duration: 0.2s;
 }
 .StudioImgs li:nth-child(1) :hover{
 	background: orange;
@@ -297,7 +297,6 @@ nav ul ul ul li {
 	margin: 20px;
 	background-image: url(/img/logo/logo-bluehole.png);
 	background-repeat: no-repeat;
-	transition-duration: 0.2s;
 }
 .StudioImgs li:nth-child(2) :hover{
 	background: skyblue;
@@ -308,7 +307,6 @@ nav ul ul ul li {
 	margin: 20px;
 	background-image: url(/img/logo/logo-rising.png);
 	background-repeat: no-repeat;
-	transition-duration: 0.2s;
 }
 .StudioImgs li:nth-child(3) :hover{
 	background: rgb(243, 70, 1);
@@ -319,7 +317,6 @@ nav ul ul ul li {
 	margin: 20px;
 	background-image: url(/img/logo/logo-striking.png);
 	background-repeat: no-repeat;
-	transition-duration: 0.2s;
 }
 .StudioImgs li:nth-child(4) :hover{
 	background: rgb(10, 196, 149);
