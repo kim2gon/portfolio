@@ -44,8 +44,8 @@ h1 {
 
 ul,li,ol {
 	list-style: none;
-    padding: 0;
-    margin: 0;
+	/* padding: 0; */
+	margin: 0;
 }
 li {
 	display: list-item;
@@ -216,23 +216,27 @@ nav ul ul ul li {
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 390px;
     padding: 40px 20px;
     color: #fff;
     background-size: cover;
     background-position: center;
 }
 
-.StudioImgs {
-	display: flex;
-    justify-content: center;
-    align-items: center;
+#studios{
+	/* display: block; */
+	/* float: left; */
 }
-.box .titsub1B {
-	vertical-align: bottom;
+
+.StudioImgs li{
+	/* width: 20%; */
+	/* width: 390px; */
+	line-height: 50px;
+	/* display: inline-block; */
+	text-align: center;
 }
 
 .StudioImgs li:nth-child(1) a .box{
-	height: 355px;
 	background-image: url(/img/logo/logo-pubg.png);
 	background-repeat: no-repeat;
 }
@@ -240,7 +244,6 @@ nav ul ul ul li {
 	background: orange;
 }
 .StudioImgs li:nth-child(2) a .box{
-	height: 355px;
 	background-image: url(/img/logo/logo-bluehole.png);
 	background-repeat: no-repeat;
 }
@@ -248,7 +251,6 @@ nav ul ul ul li {
 	background: skyblue;
 }
 .StudioImgs li:nth-child(3) a .box{
-	height: 355px;
 	background-image: url(/img/logo/logo-rising.png);
 	background-repeat: no-repeat;
 }
@@ -256,7 +258,6 @@ nav ul ul ul li {
 	background: rgb(243, 70, 1);
 }
 .StudioImgs li:nth-child(4) a .box{
-	height: 355px;
 	background-image: url(/img/logo/logo-striking.png);
 	background-repeat: no-repeat;
 }
