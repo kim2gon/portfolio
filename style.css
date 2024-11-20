@@ -57,8 +57,7 @@ li {
     unicode-bidi: isolate;
 }
 #container {
-	margin: 0 auto;
-	max-width: 890px;
+	width: 100%;
 }
 
 p {
