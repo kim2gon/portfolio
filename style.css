@@ -1,3 +1,8 @@
+/* 
+디자인은 저거 그대로 가기
+이미지 ? : 삼성꺼로 SDI
+*/
+
 body {
 	color: #222;
     font-family: 'Montserrat', 'NotoKr', sans-serif;
@@ -74,12 +79,13 @@ nav {
 	margin:0;
 	padding: 0;
 	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
 }
 
 #logo {
 	display: block;
 	/* padding: 0 30px; */
-	float: left;
 	width: 20%;
 	font-size:20px;
 	line-height: 60px;
@@ -93,20 +99,21 @@ nav {
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
-nav:after {
+/* nav:after {
 	content:"";
 	display:table;
 	clear:both;
-}
+} */
 
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
 nav ul {
-	float: right;
 	padding:0;
 	margin:0;
 	list-style: none;
 	position: relative;
+	display: flex;
+	align-items: center;
 	}
 	
 /* Positioning the navigation items inline */
@@ -180,7 +187,7 @@ nav ul ul ul li {
 	transition: 1s;
 	width: 100vw;
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: 50%;
     padding: 50px 0 52px;
     box-sizing: border-box;
@@ -222,11 +229,37 @@ nav ul ul ul li {
 
 /* ---------------------Studio Start---------------------- */
 
-.StudioImgs {
-	display: flex;
-    justify-content: center;
-    align-items: center;
+#studios{
+	margin-bottom: 180px;
 }
+
+.txtTitle{
+	margin-bottom: 60px;
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.imgBetween{
+	display: flex;
+	justify-content: space-between;
+}
+
+#studios .txt ul {
+	flex-wrap: nowrap;
+    gap: 30px;
+}
+
+#studios .txt ul li {
+	height: 100%;
+}
+
+.StudioItem {
+	/* width: calc(100%-30px)/2; */
+	width: 100%;
+}
+
+
 
 .box {
 	translate: none;
@@ -235,16 +268,57 @@ nav ul ul ul li {
 	opacity: 1;
 	visibility: inherit;
 	transform: translate(0px, 0px);
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	background-size: 100%;
 }
 
-.box span {
+.imgBetween li a {
+	display: block;
+}
+
+#studios .imgBetween li a .box {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 390px;
+    padding: 40px 20px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#studios .imgBetween li:nth-child(1) a .box {
+	background-image: url(/img/sdi1.png);
+}
+#studios .imgBetween li:nth-child(2) a .box {
+	background-image: url(/img/sdi2.png);
+}
+
+.box .titsub {
+	font-size: 26px;
+	font-weight: 700;
+	translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+}
+
+.__animated {
+	position: relative;
+	display: block;
+}
+
+/* .box span {
 	translate: none;
 	rotate: none;
 	scale: none;
 	transform: translate(0px, 0px);
-}
+	}
 
-.box .titsub1B {
+.box .titsub {
 	display: block;
 	transform: translate(0,200px);
 	text-align: left;
@@ -252,11 +326,11 @@ nav ul ul ul li {
 	border-top: 2px solid black;
 	color: #000;
 }
-.box .titsub1B p{
+.box .titsub p{
 	text-align: left;
-}
+} */
 
-.StudioImgs li:nth-child(1):hover a .box .titsub1B{
+/* .StudioImgs li:nth-child(1):hover a .box .titsub1B{
 	color: white;
 	border-top: 2px solid white;
 }
@@ -328,20 +402,189 @@ nav ul ul ul li {
 .StudioImgs li:nth-child(4) :hover{
 	background: rgb(10, 196, 149);
 	color: #fff;
-}
+} */
 /* ----------------Studio End---------------- */
 
-.txtTitle {
-	font-size: 60px;
-    font-weight: 700;
-	color: #fff;
+
+
+
+
+/* ----------------News Start---------------- */
+
+#News{
+	margin-bottom: 180px;
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
 }
 
+.NewsWrap{
+	width: 100%;
+	translate: none;
+    rotate: none;
+    scale: none;
+    opacity: 1;
+    visibility: inherit;
+    transform: translate(0px, 0px);
+	height: 175px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 0 0 40px
+}
+
+.frame{
+	width: 100%;
+	border: 0 none;
+}
+
+.frame .box {
+	max-width: 600px;
+}
+
+.boxContainer{
+	font-size: 16px;
+	max-width: 600px;
+}
+
+.boxContainer h2{
+	margin: 0 0 20px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+
+#boxWrap{
+	display: flex;
+    justify-content: space-between;
+}
+
+.mainNews{
+	flex: 6;
+}
+.newsInfo{
+	position: absolute;
+    left: -9999em;
+}
+.newsInfo dd {
+	margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 60px;
+    font-weight: 700;
+    color: #222;
+}
+
+.newsInfo dd span {
+    display: inline-block;
+    padding-left: 1px;
+    font-size: 18px;
+    font-weight: 500;
+	color: #222;
+}
+
+#boxWrap .mainTime {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    font-size: 16px;
+	flex: 4;
+}
+
+#boxWrap .mainTime dt {
+	margin-right: 15px;
+    min-width: 20%;
+    color: #222;
+	margin-bottom: 20px;
+}
+
+#boxWrap .mainTime dd {
+	min-width: 50%;
+    font-weight: 500;
+	color: #222;
+}
+
+.NewsItem{
+	max-width: 175px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+	width: calc((100% - 120px) / 4);
+}
+
+.txt ul li{
+	width: 100%;
+	height: 175px;
+}
+
+.txt ul li a{
+	display: block;
+	height: 100%;
+}
+
+#News .imgBetween ul li a .box {
+	justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 30px
+}
+
+#News .imgBetween ul li :nth-child(2) a .box {
+	background-image: url(/img/sdiicon1.svg);
+    background-position: top 54px center;
+}
+#News .imgBetween ul li :nth-child(3) a .box {
+	background-image: url(/img/sdiicon2.svg);
+    background-position: top 54px center;
+}
+#News .imgBetween ul li :nth-child(4) a .box {
+	background-image: url(/img/sdiicon3.svg);
+    background-position: top 54px center;
+}
+
+.titsub2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ----------------News End---------------- */
 
 
 
 
 
+
+
+
+
+/* ----------------Carrer Start---------------- */
+
+#Carrer{
+	margin-bottom: 180px;
+}
+
+/* ----------------Carrer End---------------- */
+
+
+
+
+
+
+
+
+
+
+/* ----------------KRAFTONGAMES Start---------------- */
+
+#KRAFTONGAMES{
+	margin-bottom: 180px;
+}
+
+/* ----------------KRAFTONGAMES End---------------- */
 
 
 
