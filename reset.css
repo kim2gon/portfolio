@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/*=============
+   Reset CSS
+==============*/
+/*css reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +22,6 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -47,65 +45,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-a {
-    text-decoration: none;
-}
-input {
-	padding: 0;
-	border: 1px solid #999;	
-}
 
 img{vertical-align:top;}
-a{text-decoration:none;}
+a{text-decoration:none; outline: 0;}
+
 /* float clearfix */
 .clearfix{*zoom:1}
 .clearfix:after{content:"";display:block;clear:both}
-=======
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-  }
-  
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  /*
-    9. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
->>>>>>> ec3b1135fd0fa429fd9a2b20332da8d9d95d4f4c
