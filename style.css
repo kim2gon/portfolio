@@ -304,10 +304,10 @@ nav ul ul ul li {
 
 
 #studios .imgBetween li:nth-child(1) a .box {
-	background-image: url(/portfolio/img/sdi1.png);
+	background-image: url(/img/sdi1.png);
 }
 #studios .imgBetween li:nth-child(2) a .box {
-	background-image: url(/portfolio/img/sdi2.png);
+	background-image: url(/img/sdi2.png);
 }
 
 .box .titsub {
@@ -538,26 +538,17 @@ nav ul ul ul li {
 
 #News {
 	width: 100%;
-<<<<<<< HEAD
-=======
 	background-color: yellow;
->>>>>>> 2b90747d7de6ca4fd5e35bd6db2aeb0f51bc6810
 }
 
 #News .txt {
 	width: 100%;
-<<<<<<< HEAD
-=======
 	background-color: blue;
->>>>>>> 2b90747d7de6ca4fd5e35bd6db2aeb0f51bc6810
 }
 
 #News .imgBetween {
 	width: 100%;
-<<<<<<< HEAD
-=======
 	background-color: red;
->>>>>>> 2b90747d7de6ca4fd5e35bd6db2aeb0f51bc6810
 }
 
 #News ul li:nth-child(1) {
@@ -576,17 +567,17 @@ nav ul ul ul li {
 }
 
 .imgBetween :nth-child(2) a .box {
-	background-image: url(/portfolio/img/sdiicon1.svg);
+	background-image: url(/img/sdiicon1.svg);
     background-position: top 54px center;
 	background-repeat: no-repeat;
 }
 .imgBetween :nth-child(3) a .box {
-	background-image: url(/portfolio/img/sdiicon2.svg);
+	background-image: url(/img/sdiicon2.svg);
     background-position: top 54px center;
 	background-repeat: no-repeat;
 }
 .imgBetween :nth-child(4) a .box {
-	background-image: url(/portfolio/img/sdiicon3.svg);
+	background-image: url(/img/sdiicon3.svg);
     background-position: top 54px center;
 	background-repeat: no-repeat;
 }
