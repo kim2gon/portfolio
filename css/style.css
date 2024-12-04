@@ -186,17 +186,22 @@ body {
 .stuitem {
   height: 100%;
   width: calc((100% - 30px) / 2);
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .stuitem a,
 .stuitem a .box {
   background-repeat: no-repeat;
   background-size: 100%;
-  border-radius: 20px;
+
 }
 
 .stuitem a {
   display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .stuitem a .box {
@@ -209,14 +214,18 @@ body {
   color: #fff;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 4;
 }
 
-.stuitem:nth-child(1) a .box {
-  background-image: url(/img/sdi1.png);
+
+.stuitem:nth-child(1) a {
+  background-image: url(/img/studios1.png);
+  
 }
 
-.stuitem:nth-child(2) a .box {
-  background-image: url(/img/sdi2.png);
+.stuitem:nth-child(2) a {
+  background-image: url(/img/studios2.png);
 }
 
 .stusub {
@@ -257,7 +266,11 @@ body {
 
 #news ul li {
   width: 100%;
-  height: 175px;
+  height: 540px;
+}
+
+#news ul li .textbox{
+  color:black
 }
 
 .newsitem {
@@ -331,13 +344,7 @@ body {
   color: #666;
 }
 
-#news ul li:not(:first-child) {
-  max-width: none;
-  justify-content: space-around;
-  width: calc((100% - 33px) / 3);
-  background-repeat: no-repeat;
-  background-size: 30px;
-}
+
 
 .newsimg, .newsimg .box {
   background-repeat: no-repeat;
@@ -348,28 +355,28 @@ body {
 .newsimg {
   display: block;
   height: 100%;
+  overflow: hidden;
 }
 
 .newsimg .box {
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 280px;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: cover;
+  border-radius: 0;
 }
 
+#news .imgbetween .newsitem:nth-child(1) .newsimg .box {
+  background-image: url(/img/News/news1.jpg);
+  /* background-position: top 54px center; */
+}
 #news .imgbetween .newsitem:nth-child(2) .newsimg .box {
-  background-image: url(/img/sdiicon1.svg);
-  background-position: top 54px center;
+  background-image: url(/img/News/news2.jpg);
 }
 #news .imgbetween .newsitem:nth-child(3) .newsimg .box {
-  background-image: url(/img/sdiicon2.svg);
-  background-position: top 54px center;
-}
-#news .imgbetween .newsitem:nth-child(4) .newsimg .box {
-  background-image: url(/img/sdiicon3.svg);
-  background-position: top 54px center;
+  background-image: url(/img/News/news3.jpg);
 }
 
 .newssub {
