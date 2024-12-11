@@ -31,6 +31,11 @@ body {
   transform: translate(0px, 0px);
 }
 
+.contents ul {
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
 /********************** NAV **********************/
 .navbar {
   position: fixed;
@@ -217,11 +222,11 @@ body {
 }
 
 .stuitem:nth-child(1) a {
-  background-image: url(/img/studios1.png);
+  background-image: url(/portfolio/img/studios1.png);
 }
 
 .stuitem:nth-child(2) a {
-  background-image: url(/img/studios2.png);
+  background-image: url(/portfolio/img/studios2.png);
 }
 
 .stusub {
@@ -230,12 +235,12 @@ body {
 }
 
 .stusubtxt {
-  position : absolute;
-  background : rgba(0,0,0,0.4);
-  left : 0;
-  right : 0;
-  top : 0;
-  bottom : 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .stusubimg {
@@ -291,8 +296,8 @@ body {
   height: 540px;
 }
 
-#news ul li .textbox{
-  color:#222;
+#news ul li .textbox {
+  color: #222;
   padding: 30px;
 }
 
@@ -367,7 +372,8 @@ body {
   color: #666;
 }
 
-.newsimg, .newsimg .box {
+.newsimg,
+.newsimg .box {
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 20px;
@@ -390,13 +396,15 @@ body {
 }
 
 #news .imgbetween .newsitem:nth-child(1) .newsimg .box {
-  background-image: url(/img/News/news1.png);
+  background-image: url(/portfolio/img/News/news1.png);
 }
+
 #news .imgbetween .newsitem:nth-child(2) .newsimg .box {
-  background-image: url(/img/News/news2.jpg);
+  background-image: url(/portfolio/img/News/news2.jpg);
 }
+
 #news .imgbetween .newsitem:nth-child(3) .newsimg .box {
-  background-image: url(/img/News/news3.jpg);
+  background-image: url(/portfolio/img/News/news3.jpg);
 }
 
 .textbox .tbnews {
@@ -451,7 +459,7 @@ body {
   color: #fff;
 }
 
-#carrer ul li:nth-child(1) {
+#carrer ul.imgbetween li.carreritem:nth-child(1) {
   width: 100%;
   max-width: 585px;
 }
@@ -464,31 +472,184 @@ body {
   width: calc((100% - 120px) / 4);
   background: #fff;
   border-radius: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-
-#carrer ul li:not(:first-child) {
+#carrer ul li:not(:first-child) a {
   display: block;
   width: 100%;
   max-width: 277px;
   height: 100%;
 }
 
+.carrerflex {
+  padding: 40px;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  background: #283895;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+}
 
+.carrerwant {
+  font-size: 26px;
+  font-weight: 700;
+}
 
+.carrerwantyou {
+  font-size: 16px;
+  font-weight: 400;
+}
 
+.carreritemflex {
+  height: 171px;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #222;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+  display: flex;
+}
 
+.carreritemflex li:nth-child(1) {
+  background-image: url(/portfolio/img/Carrer/carrer1.png);
+}
 
+.carreritemflex li:nth-child(2) {
+  background-image: url(/portfolio/img/Carrer/carrer2.png);
+}
 
+.carreritemflex li:nth-child(3) {
+  background-image: url(/portfolio/img/Carrer/carrer3.png);
+}
 
+.carreritemflex li {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 80px;
+  height: 100%;
+  max-height: 125px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  white-space: nowrap;
+}
 
+.carrerflexitem {
+  width: calc((100% - 60px) / 3);
+}
 
+.carrerflextext {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#carrer ul li:nth-child(2) a .box {
+  background-image: url(/portfolio/img/Carrer/carrer4.png);
+  background-size: 56px;
+  background-repeat: no-repeat;
+  background-position: right 40px bottom 40px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: #fff;
+  z-index: 8;
+}
+
+#carrer ul li:nth-child(3) a .box {
+  background-image: url(/portfolio/img/Carrer/carrer5.png);
+  background-size: 56px;
+  background-repeat: no-repeat;
+  background-position: right 40px bottom 40px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: #fff;
+  z-index: 8;
+}
+
+.carrersub {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+}
+
+#carrer ul li:not(:first-child) p {
+  margin-bottom: 77px;
+  color: #222;
+}
 
 /*******************Carrer end*************************/
 
 
 
 /*******************Games start*************************/
+
+#kraftgames {
+  margin-bottom: 180px;
+}
+
+.gamestxt {
+  margin-bottom: 60px;
+}
+
+.gamestitle {
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.gamestitlesub {
+  line-height: 1.3;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
