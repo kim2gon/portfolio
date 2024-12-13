@@ -1,9 +1,7 @@
 /* .mySwiper{} */
 
 swiper-container {
-    width: 100%;
-    height: 100%;
-    /* max-width: 1280px; */
+    max-width: 1280px;
     margin: 0 auto;
     position: relative;
     padding: 0 40px;
@@ -13,43 +11,30 @@ swiper-container {
 
 swiper-slide {
     text-align: center;
-    font-size: 26px;
-    font-weight: 700;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     padding-bottom: 50px;
     width: calc(50% + 20px);
+    height: 500px;
 }
 
 /* swiper-slide img {
-    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 } */
 
-swiper-slide:nth-child(1) {
+.swiperimage {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* swiper-slide:nth-child(1) {
     background-image: url(/portfolio/img/games1.png);
     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-swiper-slide:nth-child(2) {
-    background-image: url(/portfolio/img/games2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-swiper-slide:nth-child(3) {
-    background-image: url(/portfolio/img/games3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-swiper-slide:nth-child(4) {
-    background-image: url(/portfolio/img/games4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+} */
