@@ -36,6 +36,14 @@ body {
   gap: 30px;
 }
 
+.container {
+  width: 100%;
+}
+
+#mainvideo {
+  width: 100%;
+}
+
 /********************** NAV **********************/
 .navbar {
   position: fixed;
@@ -44,6 +52,9 @@ body {
   width: 100%;
   background: #fff;
   z-index: 1000;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .nav-wrapper {
@@ -97,7 +108,9 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 6rem;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .dropdown-menu a {
@@ -617,41 +630,6 @@ body {
   font-weight: 400;
   color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*******************Games end*************************/
 

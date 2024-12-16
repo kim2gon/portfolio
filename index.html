@@ -32,7 +32,7 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">ABOUT</a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><a href="#">크래프톤 이야기</a></li>
@@ -43,7 +43,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Studios</a>
+                    <a href="#" class="nav-link">STUDIOS</a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><a href="#">Studios 메인</a></li>
@@ -51,6 +51,41 @@
                             <li><a href="#">블루홀 스튜디오</a></li>
                             <li><a href="#">라이징 윙스</a></li>
                             <li><a href="#">드림모션</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">NEWS</a>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">News1</a></li>
+                            <li><a href="#">News2</a></li>
+                            <li><a href="#">News3</a></li>
+                            <li><a href="#">News4</a></li>
+                            <li><a href="#">News5</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CARRER</a>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">피플</a></li>
+                            <li><a href="#">라이프</a></li>
+                            <li><a href="#">채용공고</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">KRAFTON GAMES</a>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Games 메인</a></li>
+                            <li><a href="#">PUBG: 배틀그라운드</a></li>
+                            <li><a href="#">다크앤다커 모바일</a></li>
+                            <li><a href="#">인조이</a></li>
+                            <li><a href="#">딩컴 투게더</a></li>
                         </ul>
                     </div>
                 </li>
@@ -235,12 +270,23 @@
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">
+                        <img src="/portfolio/img/games1.png" alt="ESG 전략">
+                        <div class="text">ESG 전략</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/portfolio/img/games2.png" alt="환경">
+                        <div class="text">환경</div>
+                      </div>
+                    <div class="swiper-slide">
+                        <img src="/portfolio/img/games3.png" alt="사회">
+                        <div class="text">사회</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/portfolio/img/games4.png" alt="지배구조">
+                        <div class="text">지배구조</div>
+                      </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
 
             <!-- Swiper JS -->
@@ -249,8 +295,8 @@
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: "auto",
-                    centeredSlides: true,
+                    slidesPerView: "3",
+                    // centeredSlides: true,
                     spaceBetween: 30,
                     pagination: {
                         el: ".swiper-pagination",
