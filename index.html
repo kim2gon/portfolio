@@ -121,11 +121,12 @@
             <ul class="imgbetween">
                 <li class="stuitem">
                     <a href="index.html" class="stuimg" data-amount="20" title="PUBG">
-                        <div class="box">
-                            <img src="img/logo/logo-pubg-w.png">
-                        </div>
+                        
                         <div class="stusubtxt"></div>
                     </a>
+                    <div class="box">
+                        <img src="img/logo/logo-pubg-w.png">
+                    </div>
                 </li>
                 <li class="stuitem">
                     <a href="index.html" class="stuimg" data-delay=".3" data-amount="20" title="Bluehole Studio">
@@ -207,30 +208,27 @@
             <ul class="imgbetween">
                 <li class="carreritem">
                     <div class="box">
-                        <div class="carrerflex">
-                            <b class="carrerwant">인재상</b>
-                            <b class="carrerwantyou">게임 제작을 이끌고 성과를 만들어 내는 것은 </br>결국 '사람'에서 시작됩니다.</b>
-                        </div>
                         <ul class="carreritemflex">
                             <li class="carrerflexitem">
                                 <b class="carrerfletext">
-                                    "넓게 보는"
+                                    넓게 보는
                                     <br />
-                                    "전문가"
+                                    전문가
                                 </b>
                             </li>
                             <li class="carrerflexitem">
                                 <b class="carrerfletext">
-                                    "유저 관점의"
+                                    유저 관점의
                                     <br />
-                                    "공헌과 성과"
+                                    공헌과 성과
                                 </b>
                             </li>
-                            <li class="carrerflexitem">
-                                <b class="carrerfletext">
-                                    "말과 행동에"
+                            <li class="carrerflexitem" style="display:flex;flex-flow: column;align-items: center;">
+                                <img style="width: 80px;" src="img/Carrer/carrer3.png" alt="말과 행동에 책임과 신뢰">
+                                <b class="carrerfletext" style="padding-top:24px;">
+                                    말과 행동에
                                     <br />
-                                    "책임과 신뢰"
+                                    책임과 신뢰
                                 </b>
                             </li>
                         </ul>
@@ -238,17 +236,23 @@
                 </li>
                 <li class="carreritem">
                     <a href="index.html" class="carrerimg" data-delay=".3" data-amount="20" title="PEOPLE">
-                        <div class="box">
-                            <b class="carrersub">PEOPLE&LIFE</b>
-                            <p>자유로운 소통과 <br /> 활발한 교류를 바탕으로 <br /> 크래프톤 만의 문화를 <br /> 만들어 갑니다.</p>
+                        <div class="box" style="background-image:url('img/Carrer/main_careers-580x220.png');background-size: cover;background-position: left top;">
+                            <div style="position:absolute;background: rgba(0,0,0,0.4);left:0;top:0;right:0;bottom: 0;"></div>
+                            <div style="position: relative;z-index: 2;">
+                                <b class="carrersub">PEOPLE&LIFE</b>
+                                <p>자유로운 소통과 <br /> 활발한 교류를 바탕으로 <br /> 크래프톤 만의 문화를 <br /> 만들어 갑니다.</p>
+                            </div>
                         </div>
                     </a>
                 </li>
                 <li class="carreritem">
                     <a href="index.html" class="carrerimg" data-delay=".3" data-amount="20" title="PEOPLE">
-                        <div class="box">
-                            <b class="carrersub">KRAFTON RECRUIT</b>
+                        <div class="box" style="background-image:url('img/Carrer/main_jobs-580x220.png');background-size: cover;background-position: center;">
+                            <div style="position:absolute;background: rgba(0,0,0,0.4);left:0;top:0;right:0;bottom: 0;"></div>
+                            <div style="position: relative;z-index: 2;">
+                                <b class="carrersub">KRAFTON RECRUIT</b>
                             <p>크래프톤의 <br /> 최신 채용공고를 <br /> 살펴보세요. </p>
+                            </div>
                         </div>
                     </a>
                 </li>
@@ -271,19 +275,35 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="/portfolio/img/games1.png" alt="ESG 전략">
+                        <img src="img/games1.png" alt="ESG 전략">
                         <div class="text">ESG 전략</div>
                       </div>
                       <div class="swiper-slide">
-                        <img src="/portfolio/img/games2.png" alt="환경">
+                        <img src="img/games2.png" alt="환경">
                         <div class="text">환경</div>
                       </div>
                     <div class="swiper-slide">
-                        <img src="/portfolio/img/games3.png" alt="사회">
+                        <img src="img/games3.png" alt="사회">
                         <div class="text">사회</div>
                       </div>
                       <div class="swiper-slide">
-                        <img src="/portfolio/img/games4.png" alt="지배구조">
+                        <img src="img/games4.png" alt="지배구조">
+                        <div class="text">지배구조</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/games1.png" alt="ESG 전략">
+                        <div class="text">ESG 전략</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/games2.png" alt="환경">
+                        <div class="text">환경</div>
+                      </div>
+                    <div class="swiper-slide">
+                        <img src="img/games3.png" alt="사회">
+                        <div class="text">사회</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/games4.png" alt="지배구조">
                         <div class="text">지배구조</div>
                       </div>
                 </div>
@@ -296,6 +316,7 @@
             <script>
                 var swiper = new Swiper(".mySwiper", {
                     slidesPerView: "3",
+                    // 한번에 보이게하는거 4
                     // centeredSlides: true,
                     spaceBetween: 30,
                     pagination: {
