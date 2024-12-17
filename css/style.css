@@ -45,6 +45,34 @@ body {
   width: 100%;
 }
 
+.title {
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.title span {
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0px);
+}
+
+.titlesub {
+  line-height: 1.3;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.titlesub span {
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0px);
+}
+
 /********************** NAV **********************/
 .navbar {
   position: fixed;
@@ -188,20 +216,6 @@ body {
   margin-bottom: 60px;
 }
 
-.stutitle {
-  margin-bottom: 16px;
-  color: #fff;
-  font-size: 60px;
-  font-weight: 700;
-}
-
-.stutitlesub {
-  line-height: 1.3;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
-
 .stuitem {
   height: 100%;
   width: calc((100% - 30px) / 2);
@@ -211,7 +225,7 @@ body {
 }
 
 .stuitem a,
-.stuitem  .box {
+.stuitem .box {
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -222,7 +236,6 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
-  
   height: 390px;
 }
 
@@ -284,20 +297,6 @@ body {
 
 .newstxt {
   margin-bottom: 60px;
-}
-
-.newstitle {
-  margin-bottom: 16px;
-  color: #fff;
-  font-size: 60px;
-  font-weight: 700;
-}
-
-.newstitlesub {
-  line-height: 1.3;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
 }
 
 #news ul li:nth-child(1) {
@@ -457,20 +456,6 @@ body {
   margin-bottom: 60px;
 }
 
-.carrertitle {
-  margin-bottom: 16px;
-  color: #fff;
-  font-size: 60px;
-  font-weight: 700;
-}
-
-.carrertitlesub {
-  line-height: 1.3;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
-
 #carrer ul.imgbetween li.carreritem:nth-child(1) {
   width: 100%;
   max-width: 585px;
@@ -556,6 +541,13 @@ body {
 
 .carrerflexitem {
   width: calc((100% - 60px) / 3);
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.carrerflexitem img {
+  width: 80px;
 }
 
 .carrerflextext {
@@ -607,6 +599,30 @@ body {
   color: #fff;
 }
 
+.carrerimg {
+  background-image: url('img/Carrer/main_careers-580x220.png');
+  background-size: cover;
+  background-position: left top;
+}
+
+.carrerimg .box {
+  background-image: url('img/Carrer/main_jobs-580x220.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.carrerbox {
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  left: 0;top: 0;right: 0;bottom: 0;
+}
+
+.carreritembox{
+  position: relative;
+  z-index: 2;
+}
+
+
 /*******************Carrer end*************************/
 
 
@@ -619,20 +635,6 @@ body {
 
 .gamestxt {
   margin-bottom: 60px;
-}
-
-.gamestitle {
-  margin-bottom: 16px;
-  color: #fff;
-  font-size: 60px;
-  font-weight: 700;
-}
-
-.gamestitlesub {
-  line-height: 1.3;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
 }
 
 /*******************Games end*************************/
