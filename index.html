@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/swiper.css">
 </head>
 
@@ -264,23 +265,42 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="img/games1.png" alt="ESG 전략">
+                        <img src="img/Games/game1.png" alt="ESG 전략">
                         <div class="text">ESG 전략</div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/games2.png" alt="환경">
+                        <img src="img/Games/game2.png" alt="환경">
                         <div class="text">환경</div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/games3.png" alt="사회">
+                        <img src="img/Games/game3.png" alt="사회">
                         <div class="text">사회</div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/games4.png" alt="지배구조">
+                        <img src="img/Games/game4.png" alt="지배구조">
+                        <div class="text">지배구조</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Games/game1.png" alt="ESG 전략">
+                        <div class="text">ESG 전략</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Games/game2.png" alt="환경">
+                        <div class="text">환경</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Games/game3.png" alt="사회">
+                        <div class="text">사회</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Games/game4.png" alt="지배구조">
                         <div class="text">지배구조</div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
+
+
 
             <!-- Swiper JS -->
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -288,9 +308,7 @@
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: "3",
-                    // 한번에 보이게하는거 4
-                    // centeredSlides: true,
+                    slidesPerView: 4,
                     spaceBetween: 30,
                     pagination: {
                         el: ".swiper-pagination",
