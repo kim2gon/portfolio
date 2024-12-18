@@ -502,7 +502,6 @@ body {
 }
 
 .carreritemflex {
-  /* height: 171px; */
   padding: 30px;
   align-items: center;
   justify-content: space-around;
@@ -512,18 +511,6 @@ body {
   background-color: #fff;
   display: flex;
 }
-
-.carreritemflex li:nth-child(1) {
-  background-image: url(../img/Carrer/carrer1.png);
-}
-
-.carreritemflex li:nth-child(2) {
-  background-image: url(../img/Carrer/carrer2.png);
-}
-
-/* .carreritemflex li:nth-child(3) {
-  background-image: url(../img/Carrer/carrer3.png);
-} */
 
 .carreritemflex li {
   flex: 0 0 auto;
@@ -548,18 +535,20 @@ body {
 
 .carrerflexitem img {
   width: 80px;
+  padding-top: 90px;
 }
 
 .carrerflextext {
   font-size: 16px;
   font-weight: 500;
+  padding-top:24px;
 }
 
 #carrer ul li:nth-child(2) a .box {
-  background-image: url(../img/Carrer/carrer4.png);
-  background-size: 56px;
+  background-image: url('/portfolio/img/Carrer/carrer6.png');
+  background-size: cover;
+  background-position: left top;
   background-repeat: no-repeat;
-  background-position: right 40px bottom 40px;
   display: block;
   width: 100%;
   height: 100%;
@@ -569,10 +558,10 @@ body {
 }
 
 #carrer ul li:nth-child(3) a .box {
-  background-image: url(../img/Carrer/carrer5.png);
-  background-size: 56px;
+  background-image: url('/portfolio/img/Carrer/carrer7.png');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: right 40px bottom 40px;
   display: block;
   width: 100%;
   height: 100%;
@@ -597,18 +586,6 @@ body {
 #carrer ul li:not(:first-child) p {
   margin-bottom: 77px;
   color: #fff;
-}
-
-.carrerimg {
-  background-image: url('img/Carrer/main_careers-580x220.png');
-  background-size: cover;
-  background-position: left top;
-}
-
-.carrerimg .box {
-  background-image: url('img/Carrer/main_jobs-580x220.png');
-  background-size: cover;
-  background-position: center;
 }
 
 .carrerbox {
@@ -641,9 +618,34 @@ body {
 
 
 
+/*******************Footer start*************************/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************Footer end*************************/
 
 
 
