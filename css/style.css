@@ -43,6 +43,7 @@ body {
 
 #mainvideo {
   width: 100%;
+  margin-top: -20px;
 }
 
 .title {
@@ -71,6 +72,10 @@ body {
   rotate: none;
   scale: none;
   transform: translate(0px, 0px);
+}
+
+.txt {
+  margin-bottom: 60px;
 }
 
 /********************** NAV **********************/
@@ -212,10 +217,6 @@ body {
   margin-bottom: 180px;
 }
 
-.stutxt {
-  margin-bottom: 60px;
-}
-
 .stuitem {
   height: 100%;
   width: calc((100% - 30px) / 2);
@@ -293,10 +294,6 @@ body {
 
 #news {
   margin-bottom: 180px;
-}
-
-.newstxt {
-  margin-bottom: 60px;
 }
 
 #news ul li:nth-child(1) {
@@ -452,10 +449,6 @@ body {
   margin-bottom: 180px;
 }
 
-.carrertxt {
-  margin-bottom: 60px;
-}
-
 #carrer ul.imgbetween li.carreritem:nth-child(1) {
   width: 100%;
   max-width: 585px;
@@ -540,12 +533,12 @@ body {
 
 .carrerflextext {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   padding-top:24px;
 }
 
 #carrer ul li:nth-child(2) a .box {
-  background-image: url('/portfolio/img/Carrer/carrer6.png');
+  background-image: url('../img/Carrer/carrer6.png');
   background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
@@ -558,7 +551,7 @@ body {
 }
 
 #carrer ul li:nth-child(3) a .box {
-  background-image: url('/portfolio/img/Carrer/carrer7.png');
+  background-image: url('../img/Carrer/carrer7.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -610,10 +603,6 @@ body {
   margin-bottom: 180px;
 }
 
-.gamestxt {
-  margin-bottom: 60px;
-}
-
 /*******************Games end*************************/
 
 
@@ -646,74 +635,6 @@ body {
 
 
 /*******************Footer end*************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -801,5 +722,39 @@ body {
 
   .nav-item.active .dropdown {
     display: block;
+  }
+}
+
+/* 모바일 css */
+@media (max-width: 768px) {
+  #mainvideo {
+    margin-top: 64px;
+  }
+  .contents {
+    padding: 118px 24px 90px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .titlesub {
+    font-size: 16px;
+  }
+  .txt {
+    margin-bottom: 40px;
+  }
+  #studios, #news, #carrer, #kraftongames {
+    margin-bottom: 90px;
+  }
+  .contents ul {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .stuitem {
+    width: 100%;
+    max-height: 100px;
+    background-position-y: 50%;
+  }
+  .box {
+    
   }
 }
