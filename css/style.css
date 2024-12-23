@@ -78,6 +78,10 @@ body {
   margin-bottom: 60px;
 }
 
+.pc {display: block;}
+.tablet {display: none;}
+.m {display: none;}
+
 /********************** NAV **********************/
 .navbar {
   position: fixed;
@@ -636,11 +640,20 @@ body {
 
 /*******************Footer end*************************/
 
-
+@media (max-width: 1220px) {
+  .contents {
+    width: 100%;
+    padding: 118px 24px 90px;
+  }
+}
 
 
 /********************** MOBILE NAV **********************/
 @media (max-width: 768px) {
+  .pc {display: none;}
+  .tablet {display: none;}
+  .m {display: block;}
+
   .nav-toggle-label {
     display: flex;
     align-items: center;
@@ -786,7 +799,7 @@ body {
 /* 뉴스 */
 @media (max-width: 768px) {
   .newsimg .box {
-    height: 150px;
+    /* height: 150px; */
     background-position: center;
   }
 }
