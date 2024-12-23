@@ -72,10 +72,6 @@
   cursor: pointer;
 }
 
-/* .swiper-slide:hover .text {
-  font-size: 32px;
-} */
-
 .swiper-slide:hover img{
   transform: scale(1.3);
   transition: transform .5s;
