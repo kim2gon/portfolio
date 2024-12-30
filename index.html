@@ -96,9 +96,29 @@
 
     <div id="container" class="main">
         <div class="wrap">
-            <video id="mainvideo" poster autoplay loop muted playsinline>
+            <video class="pc" id="mainvideo" poster autoplay loop muted playsinline>
                 <source src="https://www.krafton.com/wp-content/uploads/2021/06/video-005.mp4" type="video/mp4">
             </video>
+            <div class="titletxt m tablet">
+                <h2>
+                    <span>
+                        To make the world
+                        <br>
+                        greener and sustainable 
+                        <br>
+                        through our
+                        <br>
+                        innovative technology
+                    </span>
+                </h2>
+                <p>
+                    <span>
+                        초격차 기술력을 통해
+                        <br>
+                        지속가능한 · 친환경 미래 사회 구현
+                    </span>
+                </p>
+            </div>
         </div>
     </div>
 
@@ -164,9 +184,8 @@
                         <div class="box"></div>
                         <div class="textbox">
                             <p class="tbnews">News</p>
-                            <h5 class="tbtitle">크래프톤, 신규 스튜디오 ‘인조이스튜디오’ 설립</h5>
-                            <p class="tbmain">크래프톤, 신규 스튜디오 ‘인조이스튜디오’ 설립크래프톤, 신규 스튜디오 ‘인조이스튜디오’ 설립크래프톤, 신규 스튜디오
-                                ‘인조이스튜디오’ 설립</p>
+                            <h5 class="tbtitle">크래프톤, ‘인조이스튜디오’ 설립</h5>
+                            <p class="tbmain">크래프톤, 신규 스튜디오 ‘인조이스튜디오’ 설립 크래프톤, 신규 스튜디오 ‘인조이스튜디오’ 설립 크래프톤, ‘인조이스튜디오’ 설립</p>
                             <p class="tbdate">2024. 12. 03</p>
                         </div>
                     </a>
@@ -177,8 +196,7 @@
                         <div class="textbox">
                             <p class="tbnews">News</p>
                             <h5 class="tbtitle">Dungeon Dive: 개발자들의 던전</h5>
-                            <p class="tbmain">Dungeon Dive: 개발자들의 던전 | 세계 최대 독일 게임스컴에 도전하는 한국의 다크앤다커 모바일Dungeon Dive:
-                                개발자들의 던전</p>
+                            <p class="tbmain">Dungeon Dive: 개발자들의 던전 | 세계 최대 독일 게임스컴에 도전하는 한국의 다크앤다커 모바일 Dungeon Dive</p>
                             <p class="tbdate">2024. 11. 21</p>
                         </div>
                     </a>
@@ -353,7 +371,47 @@
             </script>
         </div>
     </div>
+
+    <!-- footer -->
+    <div id="footerwrap">
+        <div class="arrow">
+            <button type="button" class="btn_top" title="최상단으로 이동하기">
+                <img src="../img/btn/btn_top.png" alt="최상단 이동">
+            </button>
+        </div>
+        <footer id="footer">
+            <div class="inner">
+                <ul class="site">
+                    <li><a href="#">윤리 · 준법경영</a></li>
+                    <li><a href="#">보안신고센터</a></li>
+                    <li><a href="#">파트너사</a></li>
+                    <li><a href="#">B2B대금결제</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">내방객 신청 시스템</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">Battery Safety Information</a></li>
+                </ul>
+            </div>
+            <div class="footer_line"></div>
+            <div class="inner">
+                <ul class="sns"></ul>
+                <address>삼성SDI(주) : 경기도 용인시 기흥구 공세로 150-20 [17084]</address>
+                <p class="copyright">
+                    Copyright © 2024 Samsung SDI.
+                    <br class="m">
+                    All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
     <script src="js/script.js"></script>
+    <script>
+        document.querySelector('.arrow').addEventListener('click',() => {
+            window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+        });
+    </script>
 </body>
 
 </html>
