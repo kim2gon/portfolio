@@ -11,14 +11,14 @@
 body {
   background: #444;
   line-height: 1.3;
-  
+
 }
 
 .kor-font {
   font-family: "Pretendard";
 }
 
-.en-font { 
+.en-font {
   font-family: "Montserrat", serif;
 }
 
@@ -776,6 +776,15 @@ body {
     text-align: center;
   }
 
+  .maindim {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
   .titletxt {
     width: 100%;
     max-width: 1200px;
@@ -793,10 +802,10 @@ body {
     transform: none;
     overflow: hidden;
     width: 100%;
-    color: #fff;
     display: block;
+    color: #fff;
   }
-
+  
   .titletxt h2 span {
     translate: none;
     rotate: none;
