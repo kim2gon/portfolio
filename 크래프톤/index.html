@@ -32,7 +32,9 @@
             </label>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">ABOUT</a>
+                    <a href="#" class="nav-link">ABOUT
+                        <img src="../크래프톤/img/btn/btn_arrow.png" class="arrdown">
+                    </a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><a href="#">크래프톤 이야기</a></li>
@@ -43,7 +45,9 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">STUDIOS</a>
+                    <a href="#" class="nav-link ">STUDIOS
+                        <img src="../크래프톤/img/btn/btn_arrow.png" class="arrdown">
+                    </a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><a href="#">Studios 메인</a></li>
@@ -55,7 +59,9 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">NEWS</a>
+                    <a href="#" class="nav-link">NEWS
+                        <img src="../크래프톤/img/btn/btn_arrow.png" class="arrdown">
+                    </a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><a href="#">News1</a></li>
@@ -67,7 +73,9 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">CARRER</a>
+                    <a href="#" class="nav-link">CARRER
+                        <img src="../크래프톤/img/btn/btn_arrow.png" class="arrdown">
+                    </a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><a href="#">피플</a></li>
@@ -78,7 +86,9 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">KRAFTON GAMES</a>
+                    <a href="#" class="nav-link">KRAFTON GAMES
+                        <img src="../크래프톤/img/btn/btn_arrow.png" class="arrdown">
+                    </a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><a href="#">Games 메인</a></li>
@@ -135,7 +145,7 @@
                     <span class="en-font">Studios</span>
                 </h2>
                 <p class="titlesub" data-hidden="true" data-delay=".3">
-                    <span>크래프톤 스튜디오 입니다.</span>
+                    <span>크래프톤 스튜디오를 소개합니다.</span>
                 </p>
             </div>
             <ul class="imgbetween">
@@ -217,7 +227,7 @@
                     <span class="en-font">Carrer</span>
                 </h2>
                 <p class="titlesub" data-hidden="true" data-delay=".3">
-                    <span>커리어 입니다.</span>
+                    <span>커리어를 소개합니다.</span>
                 </p>
             </div>
             <ul class="imgbetween">
@@ -367,13 +377,25 @@
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
+                    slidesPerView: 4,  // PC에서는 4개씩 보이도록 설정
+                    spaceBetween: 30,  // 슬라이드 간 간격
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
                     },
+                    breakpoints: {
+                        1220: {
+                            slidesPerView: 4, // 1220px 이상에서는 4개
+                        },
+                        768: {
+                            slidesPerView: 2, // 768px 이상에서는 2개
+                        },
+                        0: {
+                            slidesPerView: 1, // 모바일에서는 1개
+                        }
+                    }
                 });
+
             </script>
         </div>
     </div>
